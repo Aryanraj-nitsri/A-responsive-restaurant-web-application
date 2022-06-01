@@ -47,7 +47,7 @@ body {
 
 #image {
     width: 2vw;
-    height: 1.5vw;
+    height: 1.4vw;
     border-radius: 0.8rem;
 
 }
@@ -84,12 +84,13 @@ body {
     display: none;
     cursor: pointer;
     position: absolute;
-    right: 0;
+    right:82%;
+    top:30%;
 }
 
 .bar {
-    width: 3vw;
-    height: 0.4vw;
+    width: 4vw;
+    height: 0.6vw;
     background-color: white;
     margin-top: 0.2rem;
     border-radius: 0.2rem;
@@ -119,7 +120,7 @@ body {
 
 
     .menu {
-        position:fixed;
+        position: fixed;
         top: -100%;
         gap: 0;
         flex-direction: column;
@@ -136,10 +137,30 @@ body {
         justify-content: center;
 
     }
-
+    .heading{
+        font-size: 3vw;
+    }
+    #search-Box {
+        border-radius: 2vw;
+        font-size: 2vw;
+        border: 0.2rem solid white;
     
+    }
 
 
+    #nav-button {
+        padding: 0.4vw;
+        font-size: 2vw;
+        border-radius: 0.4vw;
+        border: 0.1rem solid rgb(2, 2, 78);
+    }
+    #image{
+        width: 5vw;
+        height:2.5vh ;
+    }
+    #nav{
+        gap: 4.5vw;
+    }
 
 }
 
@@ -208,7 +229,7 @@ body {
     position: absolute;
     top: 35%;
     left: 16%;
-    font-size: 3em;
+    font-size: 3rem;
     /* background-color: white; */
     border-radius: 2rem;
     /* padding: 0.2rem; */
@@ -220,7 +241,7 @@ body {
     position: absolute;
     top: 35%;
     right: 16%;
-    font-size: 3em;
+    font-size: 3rem;
     /* background-color: white; */
     border-radius: 2rem;
     /* padding: 0.2rem; */
@@ -272,7 +293,7 @@ body {
 
 #serv>h1 {
 
-    font-size: 3em;
+    font-size: 2rem;
     font-family: 'Crimson Text', serif;
 }
 
@@ -313,13 +334,13 @@ body {
 }
 
 .cus-service>p {
-    padding: 2rem;
-    font-size: 1em;
+    font-size: 1vw;
+    padding: 2vw;
     background-color: rgb(244, 235, 235);
 }
 
 .cus-service>h1 {
-    font-size: 2em;
+    font-size: 1.8rem;
 }
 
 .fast-delivery>img {
@@ -328,8 +349,8 @@ body {
 }
 
 .fast-delivery>p {
-    font-size: 1em;
-    padding: 2rem;
+    font-size: 1vw;
+    padding: 2vw;
     background-color: rgb(244, 235, 235);
 }
 
@@ -340,14 +361,15 @@ body {
 }
 
 .fast-delivery>h1 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 #extra-cust-para>p {
-    font-size: 1em;
+    font-size: 1vw;
     background-color: rgb(244, 235, 235);
     text-align: center;
-    padding: 0rem 2rem;
+    padding: 0rem 2vw;
+    width: inherit;
     display: none;
 
 }
@@ -375,9 +397,9 @@ body {
 }
 
 #extra>p {
-    font-size: 1em;
+    font-size: 1vw;
     text-align: center;
-    padding: 0rem 2rem;
+    padding: 0rem 2vw;
     display: none;
     background-color: rgb(244, 235, 235);
 }
@@ -408,7 +430,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(2, 2, 78);
-    
+
 }
 
 .contact-us>h1 {
@@ -416,7 +438,7 @@ body {
     font-family: 'Crimson Text', serif;
     margin-top: 3rem;
     color: white;
-    font-size: 2vw;
+    font-size: 2em;
 }
 
 .contact-us>form {
@@ -429,12 +451,14 @@ body {
     gap: 6vh;
     /* border: 2px solid red; */
 }
-.formBox{
+
+.formBox {
     position: relative;
     width: 60%;
     height: 6vh;
 }
-.fill{
+
+.fill {
     width: 100%;
     height: 100%;
     background: none;
@@ -442,12 +466,17 @@ body {
     color: white;
     font-size: 1.1vw;
     padding-left: 3rem;
-    
+
     border-radius: 0.9rem;
     transition: 0.6s;
 }
-.fill:hover{
-    border-color: chartreuse;
+
+.fill:hover {
+    border: 2px solid chartreuse;
+}
+
+.fill:focus {
+    border: 2px solid chartreuse;
 }
 
 
@@ -458,15 +487,17 @@ body {
 
 .contact-us>form>button {
     font-family: 'Crimson Text', serif;
-    font-size: 1.4vw;
-    width: 14%;
-    height: 5vh;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 8em;
+    height: 3em;
     border-radius: 0.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: gold;
     color: white;
+    opacity: 0.9;
 }
 
 .contact-us>form>button:hover {
@@ -476,14 +507,14 @@ body {
 
 .name-label {
     font-size: 1.4rem;
-    color:white;
+    color: white;
     position: absolute;
-    top:20%;
+    top: 20%;
     left: 6%;
-    transition:all 0.6 ease-in-out;
-    
-    
-    
+    transition: all 0.6 ease-in-out;
+
+
+
 }
 
 .email-label {
@@ -492,9 +523,9 @@ body {
     position: absolute;
     top: 25%;
     left: 6%;
-    transition:all 0.6 ease-in-out;
-    
-    
+    transition: all 0.6 ease-in-out;
+
+
 }
 
 .pass-label {
@@ -502,23 +533,23 @@ body {
     color: white;
     position: absolute;
     top: 22%;
-    left:6%;
-    transition:all 0.6 ease-in-out;
-    
+    left: 6%;
+    transition: all 0.6 ease-in-out;
+
 
 }
 
 .pos {
     font-size: 1.3rem;
-    top:-22%;
-    left:8%;
+    top: -22%;
+    left: 8%;
     background-color: rgb(2, 2, 78);
 
 }
 
 .posEmail {
     font-size: 1.3rem;
-    top:-24%;
+    top: -24%;
     left: 8%;
     background-color: rgb(2, 2, 78);
 }
@@ -533,7 +564,7 @@ body {
 #emailIcon {
     font-size: 1.4rem;
     position: absolute;
-    left:1%;
+    left: 1%;
     top: 25%;
     color: chartreuse;
 }
@@ -549,7 +580,7 @@ body {
 #passIcon {
     position: absolute;
     font-size: 1.4rem;
-    left:1%;
+    left: 1%;
     top: 25%;
     color: chartreuse;
 
@@ -566,12 +597,12 @@ body {
 
 .follow>h1 {
     color: white;
-    font-size: 2vw;
+    font-size: 2rem;
 
 }
 
 #fac {
-    font-size: 3vw;
+    font-size: 3em;
     color: white;
     padding: 0.3vw;
     transition: 0.8s;
@@ -595,7 +626,7 @@ body {
 
 
 #insta {
-    font-size: 3vw;
+    font-size: 3em;
     color: white;
     padding: 0.3vw;
     background-color: #8a3ab9;
@@ -605,7 +636,7 @@ body {
 }
 
 #twi {
-    font-size: 3vw;
+    font-size: 3em;
     color: white;
     background-color: rgb(105, 105, 211);
     padding: 0.3vw;
@@ -614,7 +645,7 @@ body {
 }
 
 #you {
-    font-size: 3vw;
+    font-size: 3em;
     color: white;
     background-color: #FF0000;
     padding: 0.3vw;
@@ -642,7 +673,7 @@ body {
 }
 
 .copyright {
-    font-size: 1.3rem;
+    font-size:1.5rem;
     width: 100vw;
     height: 9vh;
     background-color: green;
@@ -732,110 +763,162 @@ body {
     font-family: 'Crimson Text', serif;
     font-size: 2.5vw;
 }
+
 @media screen and (max-width:769px) {
-    .ser-container{
+    .ser-container {
         flex-direction: column;
         gap: 4vh;
         align-items: center;
     }
-    .cus-service{
-        width: 50%;
-    }
-    .fast-delivery{
-        width: 50%;
-    }
-    #serv{
+
+
+
+
+    #serv {
         gap: 4vh;
     }
-    .plans{
+
+    .plans {
         flex-direction: column;
         align-items: center;
         /* width: 50%; */
         gap: 6vh;
     }
-.PlanBox{
-    width: 45%;
+
+    .PlanBox {
+        width: 60%;
+    }
+
+    .PlanBox>h1 {
+        font-size: 2rem;
+    }
+
+    .PlanDetail>p {
+        font-size: 0.8em;
+    }
+
+    .PlanTitle>h1 {
+        font-size: 2em;
+    }
+
+    .buybutton {
+        font-size: 1.5vw;
+        width: 8vw;
+    }
+
+    .name-label {
+        font-size: 1.4rem;
+        color: white;
+        position: absolute;
+        top: 20%;
+        left: 11%;
+        transition: all 0.6 ease-in-out;
+
+
+
+    }
+
+    .email-label {
+        font-size: 1.4rem;
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 11%;
+        transition: all 0.6 ease-in-out;
+
+
+    }
+
+    .pass-label {
+        font-size: 1.4rem;
+        color: white;
+        position: absolute;
+        top: 22%;
+        left: 11%;
+        transition: all 0.6 ease-in-out;
+
+
+    }
+
+    .pos {
+        font-size: 1.3rem;
+        top: -22%;
+        left: 14%;
+        background-color: rgb(2, 2, 78);
+
+    }
+
+    .posEmail {
+        font-size: 1.3rem;
+        top: -24%;
+        left: 14%;
+        background-color: rgb(2, 2, 78);
+    }
+
+    .posPass {
+        font-size: 1.2rem;
+        top: -24%;
+        left: 14%;
+        background-color: rgb(2, 2, 78)
+    }
+
+    .formBox {
+        position: relative;
+        width: 80%;
+        height: 7vh;
+    }
+    .cus-service{
+        width: 50vw;
+    }
+    .cus-service>p{
+        font-size: 3vw;
+    }
+    .fast-delivery{
+        width: 50vw;
+    }
+    .fast-delivery>p{
+        font-size: 3vw;
+    }
+    #extra>p{
+        font-size: 3vw;
+    }
+    #extra-cust-para>p{
+        font-size: 3vw;
+    }
+    
+.copyright{
+    font-size: 4vw;
 }
-.PlanBox>h1{
-    font-size: 2rem;
-}
-.PlanDetail>p {
-    font-size: 0.8em;
-}
-.PlanTitle>h1{
-    font-size: 2em;
-}
-.buybutton{
-    font-size: 1.5vw;
-    width: 8vw;
-}
-.name-label {
-    font-size: 1.4rem;
-    color:white;
+.next-arrow {
     position: absolute;
-    top:20%;
-    left: 11%;
-    transition:all 0.6 ease-in-out;
-    
-    
-    
-}
+    top: 38%;
+    font-size: 10vw;
 
-.email-label {
-    font-size: 1.4rem;
-    color: white;
+}
+.pre-arrow {
     position: absolute;
-    top: 25%;
-    left: 11%;
-    transition:all 0.6 ease-in-out;
-    
-    
-}
-
-.pass-label {
-    font-size: 1.4rem;
-    color: white;
-    position: absolute;
-    top: 22%;
-    left:11%;
-    transition:all 0.6 ease-in-out;
-    
+    top: 38%;
+    font-size: 10vw;
 
 }
-
-.pos {
-    font-size: 1.3rem;
-    top:-22%;
-    left:14%;
-    background-color: rgb(2, 2, 78);
-
+.cus-service>h1{
+    font-size: 6vw;
 }
-
-.posEmail {
-    font-size: 1.3rem;
-    top:-24%;
-    left: 14%;
-    background-color: rgb(2, 2, 78);
+.fast-delivery>h1{
+    font-size:6vw ;
 }
-
-.posPass {
-    font-size: 1.2rem;
-    top: -24%;
-    left: 14%;
-    background-color: rgb(2, 2, 78)
+#serv>h1{
+    font-size: 10vw;
 }
-
-
-
 }
-
-.disp{
+.disp {
     display: none;
 }
-.formerror{
-    color:red;
+
+.formerror {
+    color: red;
     font-weight: bold;
     font-size: 2vh;
     margin-left: 3vh;
-    
+
 }
