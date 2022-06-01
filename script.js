@@ -95,6 +95,11 @@ input.addEventListener("click", () => {
         lab1[0].classList.toggle("pos");
     }
 
+    input.addEventListener("input", () => {
+        
+            lab1[0].classList.add("pos")
+        
+    })
 })
 const input2 = document.getElementById("emailInput")
 const lab2 = document.getElementById("Email")
@@ -104,17 +109,32 @@ input2.addEventListener("click", () => {
         lab2.classList.toggle("posEmail")
     }
 })
+input2.addEventListener("input", () => {
+    
+        lab2.classList.add("posEmail")
+    
+})
 const input3 = document.getElementById("passInput")
 const lab3 = document.getElementById("passLabel")
+function change(){
+    console.log("working")
+        lab3.classList.toggle("posPass")
+}
 input3.addEventListener("click", () => {
     if (input3.value === "") {
 
         lab3.classList.toggle("posPass")
     }
 })
+input3.addEventListener("input", () => {
+    
+        lab3.classList.add("posPass")
+    
+})
+
 // form validation
-const form=document.getElementById("form")
-form.addEventListener("submit",(e)=>{
+const form = document.getElementById("form")
+form.addEventListener("submit", (e) => {
     e.preventDefault();
 })
 function clearErrror() {
@@ -126,21 +146,21 @@ function clearErrror() {
 }
 function setError(id, error) {
     const requiredElement = document.getElementById(`${id}`);
-    requiredElement.innerText =`${error}`;
+    requiredElement.innerText = `${error}`;
 }
 
 function validation() {
-    let temp =true;
+    let temp = true;
     clearErrror();
-    if(input.value.length<4){
-        setError("nameerror","length of name is too short");
-        temp=false;
-}
+    if (input.value.length < 4) {
+        setError("nameerror", "length of name is too short");
+        temp = false;
+    }
 
-    if(input3.value.length<6){
-        setError("passerror","length of password should be greater than 6")
-        temp=false;
-}
+    if (input3.value.length < 6) {
+        setError("passerror", "length of password should be greater than 6")
+        temp = false;
+    }
     return temp;
 }
 
