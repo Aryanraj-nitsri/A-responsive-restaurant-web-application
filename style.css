@@ -802,9 +802,17 @@ body {
     }
 
     .buybutton {
-        font-size: 1.5vw;
-        width: 8vw;
+        font-size: 4vw;
+        width: 17vw;
+        border: 1rem;
+        height: 6vh;
     }
+    #extra-cust-para>button {
+    font-size: 4vw;
+}
+    #extra>button{
+    font-size: 4vw;
+}
 
     .name-label {
         font-size: 1.4rem;
