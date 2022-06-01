@@ -865,7 +865,7 @@ body {
     .formBox {
         position: relative;
         width: 80%;
-        height: 7vh;
+        height: 9vh;
     }
     .cus-service{
         width: 50vw;
@@ -892,13 +892,13 @@ body {
 .next-arrow {
     position: absolute;
     top: 38%;
-    font-size: 10vw;
+    font-size: 8vw;
 
 }
 .pre-arrow {
     position: absolute;
     top: 38%;
-    font-size: 10vw;
+    font-size: 8vw;
 
 }
 .cus-service>h1{
